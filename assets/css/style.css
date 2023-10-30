@@ -1,98 +1,220 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
 }
 
-.container{
+body {
+	background-color: #F9F9F9;
+}
+
+.container {
 	max-width: 1440px;
 	margin: 0 auto;
 }
 
-.header-pocket{
+.header-pocket {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 66px;
 	align-items: center;
 }
 
-.header-icons{
+.header-icons {
 	display: flex;
-	gap: 28px;
+	gap: 20px;
 }
 
-.header-menu{
+.header-icons  img {
+	width: 40px;
+}
+
+.header-menu {
 	display: flex;
 	gap: 40px;
 }
 
-.header-menu a{
+.header-menu a {
 	font-size: 24px;
 	color: black;
 }
 
-.header-menu a:hover{
+.header-menu a:hover {
 	color: rgb(184, 92, 30);
 	transition: 1s;
 }
 
 
-.ser {
-  position: relative;
-  --size-button: 40px;
-  color: white;
-	margin-right: 30px;
+.slider {
+	width: 1440px;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 50px;
+	border: #000000 solid 1px;
+
 }
 
-.input {
-  padding-left: var(--size-button);
-  height: var(--size-button);
-  font-size: 15px;
-  border: none;
-  color: #fff;
-  outline: none;
-  width: var(--size-button);
-  transition: all ease 0.3s;
-  background-color: #191A1E;
-  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
-  border-radius: 50px;
-  cursor: pointer;
-	
+.slide {
+	width: 1440px;
+	height: 400px;
+	font-size: 30px;
+	text-align: center;
 }
 
-.input:focus,
-.input:not(:invalid) {
-  width: 200px;
-  cursor: text;
-  box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
-}
-
-.input:focus + .icon,
-.input:not(:invalid) + .icon {
-  pointer-events: all;
-  cursor: pointer;
-	
-}
-
-.ser .icon {
-  position: absolute;
-  width: var(--size-button);
-  height: var(--size-button);
-  top: 0;
-  left: 0;
-  padding: 8px;
-  pointer-events: none;
-}
-
-.ser .icon svg {
-  width: 100%;
-  height: 100%;
-}
-
-.dv{
+.slides {
 	position: absolute;
-	left: 21%;
-	top: 7.5%;
-	
+	display: flex;
+	left: 0;
+	top: 0;
+	transition: all .3s ease-in-out;
+}
+
+.one {
+	background-image: url(/assets/img/images/image1.jpg);
+}
+
+.two {
+	background-image: url(/assets/img/images/image2.jpg);
+}
+
+.three {
+	background-image: url(/assets/img/images/image3.jpg);
+}
+
+.categories {
+	margin-top: 100px;
+}
+
+.categories-pocket {
+	display: flex;
+	gap: 100px;
+}
+
+.categories-button a {
+	font-size: 20px;
+	color: #000000;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.categories-title h1 {
+	font-size: 40px;
+}
+
+.categories-start {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+}
+
+.categories-cards {
+	display: flex;
+	gap: 50px;
+	align-items: center;
+	justify-content: center;
+}
+
+.top-deals {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.top-deals-start {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+
+}
+
+.top-deals-cards {
+	display: flex;
+	gap: 50px;
+	align-items: center;
+	justify-content: center;
+}
+
+.top-deals-card a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.tp-card {
+	background-color: #fff;
+	width: 250px;
+}
+
+.tp-card-title h1 {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.tp-card-cost h1 {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.tp-card-offer {
+	display: flex;
+	gap: 5px;
+}
+
+.tp-card-desc {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 0 20px 20px 20px
+}
+
+.tp-card-img img{
+	max-width: 163px;
+	max-height: 103px;
+}
+
+.green {
+	color: green;
+	font-size: 15px;
+	font-weight: 400;
+	margin-left: 5px;
+}
+
+.procherk {
+	font-size: 15px;
+	font-weight: 400;
+	margin-left: 5px;
+	text-decoration: line-through;
+}
+
+.tp-card-img {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.tp-card-rate img {
+	margin: 10px 0 10px 10px;
+}
+
+.top-deals-pocket {
+	display: flex;
+	gap: 84px;
+}
+
+.top-deals-title h1 {
+	font-size: 40px;
+}
+
+.top-deals-button a {
+	font-size: 20px;
+	color: #000000;
+	display: flex;
+	align-items: center;
+	gap: 10px;
 }
