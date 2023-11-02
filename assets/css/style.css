@@ -218,3 +218,50 @@ body {
 	align-items: center;
 	gap: 10px;
 }
+
+
+/*  */
+
+.table-of-content{
+	margin-top: 60px;
+}
+
+.toc-pocket{
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.tocc-pocket{
+	display: flex;
+	gap: 20px;
+}
+
+.toc-content{
+	display: flex;
+}
+
+.toc-content-pocket{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+}
+
+.toc-title{
+	text-align: center;
+}
+
+.toc-back{
+	display: flex;
+	align-items: center;
+}
+
+select{
+	width: 151px;
+	height: 40px;
+	text-align: center;
+}
+
+/*  */
